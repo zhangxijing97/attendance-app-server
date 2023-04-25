@@ -51,16 +51,14 @@ The server should now be running and accessible at `http://localhost:8080`.
 ### Port in Use Error
 
 If you encounter an error indicating that the port 8080 is already in use, you can resolve it by finding and terminating the process occupying the port. Run the following command to find the process:
-
-\`\`\`bash
+```
 sudo lsof -i:8080
-\`\`\`
+```
 
 This command will display the process ID (PID) of the process occupying the port. To terminate the process, use the `kill` command followed by the PID:
-
-\`\`\`bash
+```
 sudo kill <PID>
-\`\`\`
+```
 
 Replace `<PID>` with the process ID you found in the previous step. After terminating the process, try running the server again with `vapor run serve`.
 
