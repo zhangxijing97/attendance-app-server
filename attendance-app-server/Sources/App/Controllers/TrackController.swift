@@ -41,8 +41,8 @@ struct TrackController: RouteCollection {
                 $0.name = track.name
                 $0.level = track.level
                 $0.location = track.location
-                $0.date = track.date
-                $0.days = track.days
+                $0.startDate = track.startDate
+                $0.endDate = track.endDate
                 $0.sessions = track.sessions
                 return $0.update(on: req.db).transform(to: .ok)
             }

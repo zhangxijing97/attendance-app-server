@@ -16,8 +16,8 @@ struct CreateTrack: Migration {
         .field("name", .string)
         .field("level", .string)
         .field("location", .string)
-        .field("date", .string)
-        .field("days", .array(of: .string))
+        .field("startDate", .date)
+        .field("endDate", .date)
         .field("sessions", .array(of: .string))
         .create()
     }

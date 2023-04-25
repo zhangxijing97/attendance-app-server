@@ -38,12 +38,11 @@ struct StudentController: RouteCollection {
         return Student.find(student.id, on: req.db)
             .unwrap(or: Abort(.notFound))
             .flatMap {
-                $0.name = student.name
-                $0.emailAddress = student.emailAddress
                 $0.referenceNumber = student.referenceNumber
-                $0.nickName = student.nickName
-                $0.phoneNumber = student.phoneNumber
+                $0.name = student.name
                 $0.gender = student.gender
+                $0.emailAddress = student.emailAddress
+                $0.phoneNumber = student.phoneNumber
                 $0.parentName = student.parentName
                 $0.parentPhoneNumber = student.parentPhoneNumber
                 $0.additionalContactPhoneNumber = student.additionalContactPhoneNumber

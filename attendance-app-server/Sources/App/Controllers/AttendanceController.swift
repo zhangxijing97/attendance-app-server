@@ -37,11 +37,11 @@ struct AttendanceController: RouteCollection {
         return Attendance.find(attendance.id, on: req.db)
             .unwrap(or: Abort(.notFound))
             .flatMap {
-                $0.day1Sessions = attendance.day1Sessions
-                $0.day2Sessions = attendance.day2Sessions
-                $0.day3Sessions = attendance.day3Sessions
-                $0.day4Sessions = attendance.day4Sessions
-                $0.day5Sessions = attendance.day5Sessions
+                $0.trackstudent_id = attendance.trackstudent_id
+                $0.date = attendance.date
+                $0.sessionNumber = attendance.sessionNumber
+                $0.checkInTime = attendance.checkInTime
+                $0.checkOutTime = attendance.checkOutTime
                 return $0.update(on: req.db).transform(to: .ok)
             }
     }

@@ -14,23 +14,20 @@ final class Student: Model, Content {
     @ID(key: .id)
     var id: UUID?
     
-    @Field(key: "name")
-    var name: String
-    
-    @Field(key: "emailAddress")
-    var emailAddress: String
-    
     @Field(key: "referenceNumber")
     var referenceNumber: String
     
-    @Field(key: "nickName")
-    var nickName: String
-    
-    @Field(key: "phoneNumber")
-    var phoneNumber: String
+    @Field(key: "name")
+    var name: String
     
     @Field(key: "gender")
     var gender: String
+    
+    @Field(key: "emailAddress")
+    var emailAddress: String
+
+    @Field(key: "phoneNumber")
+    var phoneNumber: String
     
     @Field(key: "parentName")
     var parentName: String
@@ -41,25 +38,15 @@ final class Student: Model, Content {
     @Field(key: "additionalContactPhoneNumber")
     var additionalContactPhoneNumber: String
     
-    /*
-    // hasMany - Student has many attendances
-    @Children(for: \.$student)
-    var attendances: [Attendance]
-    
-    @Siblings(through: Attendance.self, from: \.$student, to: \.$track)
-    var tracks: [Track]
-    */
-    
     init() {}
     
-    init(id: UUID? = nil, name: String, emailAddress: String, referenceNumber: String, nickName: String, phoneNumber: String, gender: String, parentName: String, parentPhoneNumber: String, additionalContactPhoneNumber: String) {
+    init(id: UUID? = nil, referenceNumber: String, name: String, gender: String, emailAddress: String, phoneNumber: String, parentName: String, parentPhoneNumber: String, additionalContactPhoneNumber: String) {
         self.id = id
-        self.name = name
-        self.emailAddress = emailAddress
         self.referenceNumber = referenceNumber
-        self.nickName = nickName
-        self.phoneNumber = phoneNumber
+        self.name = name
         self.gender = gender
+        self.emailAddress = emailAddress
+        self.phoneNumber = phoneNumber
         self.parentName = parentName
         self.parentPhoneNumber = parentPhoneNumber
         self.additionalContactPhoneNumber = additionalContactPhoneNumber

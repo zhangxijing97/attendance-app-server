@@ -1,0 +1,74 @@
+[
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-12T00:00:00Z",
+        "sessionNumber": "0",
+        "startTime": "2023-06-12T09:00:00Z",
+        "endTime": "2023-06-12T12:00:00Z"
+    },
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-13T00:00:00Z",
+        "sessionNumber": "0",
+        "startTime": "2023-06-13T09:00:00Z",
+        "endTime": "2023-06-13T12:00:00Z"
+    },
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-14T00:00:00Z",
+        "sessionNumber": "0",
+        "startTime": "2023-06-14T09:00:00Z",
+        "endTime": "2023-06-14T12:00:00Z"
+    },
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-15T00:00:00Z",
+        "sessionNumber": "0",
+        "startTime": "2023-06-15T09:00:00Z",
+        "endTime": "2023-06-15T12:00:00Z"
+    },
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-16T00:00:00Z",
+        "sessionNumber": "0",
+        "startTime": "2023-06-16T09:00:00Z",
+        "endTime": "2023-06-16T12:00:00Z"
+    },
+    
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-12T00:00:00Z",
+        "sessionNumber": "1",
+        "startTime": "2023-06-12T09:00:00Z",
+        "endTime": "2023-06-12T12:00:00Z"
+    },
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-13T00:00:00Z",
+        "sessionNumber": "1",
+        "startTime": "2023-06-13T09:00:00Z",
+        "endTime": "2023-06-13T12:00:00Z"
+    },
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-14T00:00:00Z",
+        "sessionNumber": "1",
+        "startTime": "2023-06-14T09:00:00Z",
+        "endTime": "2023-06-14T12:00:00Z"
+    },
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-15T00:00:00Z",
+        "sessionNumber": "1",
+        "startTime": "2023-06-15T09:00:00Z",
+        "endTime": "2023-06-15T12:00:00Z"
+    },
+    {
+        "track_id": "94afe5b2-7f31-4108-bf7c-a38ea9e00d78",
+        "date": "2023-06-16T00:00:00Z",
+        "sessionNumber": "1",
+        "startTime": "2023-06-16T09:00:00Z",
+        "endTime": "2023-06-16T12:00:00Z"
+    }
+    
+]

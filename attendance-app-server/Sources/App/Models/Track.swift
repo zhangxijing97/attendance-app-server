@@ -1,8 +1,8 @@
 //
-//  File.swift
+//  Track.swift
 //  
 //
-//  Created by 张熙景 on 3/24/23.
+//  Created by Xijing Zhang on 3/24/23.
 //
 
 import Fluent
@@ -23,33 +23,24 @@ final class Track: Model, Content {
     @Field(key: "location")
     var location: String
     
-    @Field(key: "date")
-    var date: String
+    @Field(key: "startDate")
+    var startDate: Date
     
-    @Field(key: "days")
-    var days: [String]
+    @Field(key: "endDate")
+    var endDate: Date
     
     @Field(key: "sessions")
     var sessions: [String]
-    
-    /*
-    // hasMany - Student has many attendances
-    @Children(for: \.$track)
-    var attendances: [Attendance]
-    
-    @Siblings(through: Attendance.self, from: \.$track, to: \.$student)
-    var students: [Student]
-    */
-    
+
     init() {}
     
-    init(id: UUID? = nil, name: String, level: String, location: String, date: String, days: [String], sessions: [String]) {
+    init(id: UUID? = nil, name: String, level: String, location: String, startDate: Date, endDate: Date, sessions: [String]) {
         self.id = id
         self.name = name
         self.level = level
         self.location = location
-        self.date = date
-        self.days = days
+        self.startDate = startDate
+        self.endDate = endDate
         self.sessions = sessions
     }
 }

@@ -1,27 +1,27 @@
 //
-//  CreateAttendance.swift
+//  File.swift
 //  
 //
-//  Created by Xijing Zhang on 3/16/23.
+//  Created by 张熙景 on 4/5/23.
 //
 
 import Foundation
 import Fluent
 import FluentPostgresDriver
 
-struct CreateAttendance: Migration {
+struct CreateSession: Migration {
     func prepare(on database: Database) -> EventLoopFuture<Void> {
-        database.schema("attendances")
+        database.schema("sessions")
         .id()
-        .field("trackstudent_id", .uuid)
+        .field("track_id", .uuid)
         .field("date", .date)
         .field("sessionNumber", .string)
-        .field("checkInTime", .datetime)
-        .field("checkOutTime", .datetime)
+        .field("startTime", .datetime)
+        .field("endTime", .datetime)
         .create()
     }
 
     func revert(on database: Database) -> EventLoopFuture<Void> {
-        return database.schema("attendances").delete()
+        return database.schema("sessions").delete()
     }
 }
