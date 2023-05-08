@@ -39,13 +39,24 @@ struct StudentController: RouteCollection {
             .unwrap(or: Abort(.notFound))
             .flatMap {
                 $0.referenceNumber = student.referenceNumber
-                $0.name = student.name
+                $0.firstName = student.firstName
+                $0.lastName = student.lastName
+                $0.nickName = student.nickName
                 $0.gender = student.gender
+                $0.pronouns = student.pronouns
+                $0.gradeEntering = student.gradeEntering
+                
                 $0.emailAddress = student.emailAddress
                 $0.phoneNumber = student.phoneNumber
                 $0.parentName = student.parentName
                 $0.parentPhoneNumber = student.parentPhoneNumber
-                $0.additionalContactPhoneNumber = student.additionalContactPhoneNumber
+                $0.emergencyContactName1 = student.emergencyContactName1
+                $0.emergencyContactPhone1 = student.emergencyContactPhone1
+                $0.emergencyContactName2 = student.emergencyContactName2
+                $0.emergencyContactPhone2 = student.emergencyContactPhone2
+                
+                $0.checkoutPolicy = student.checkoutPolicy
+                $0.other = student.other
                 return $0.update(on: req.db).transform(to: .ok)
             }
     }

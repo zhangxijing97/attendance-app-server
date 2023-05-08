@@ -9,7 +9,7 @@ public func configure(_ app: Application) throws {
     app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
     app.views.use(.leaf)
 
-    app.databases.use(.postgres(hostname: "localhost", username: "postgres", password: "", database: "appdb"), as: .psql)
+    app.databases.use(.postgres(hostname: "localhost", username: "postgres", password: "", database: "attendancedb"), as: .psql)
 
     app.migrations.add(CreateStudent())
     app.migrations.add(CreateTrack())

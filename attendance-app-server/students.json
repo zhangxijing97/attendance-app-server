@@ -1,6 +1,67 @@
 [
     {
         "referenceNumber": "123456789",
+        "firstName": "John",
+        "lastName": "Doe",
+        "nickName": "JD",
+        "gender": "Male",
+        "pronouns": "he/him/his",
+        "gradeEntering": "10th",
+        "emailAddress": "johndoe@email.com",
+        "phoneNumber": "555-555-1212",
+        "parentName": "Jane Doe",
+        "parentPhoneNumber": "555-555-1213",
+        "emergencyContactName1": "Alice Doe",
+        "emergencyContactPhone1": "555-555-1214",
+        "emergencyContactName2": "Bob Doe",
+        "emergencyContactPhone2": "555-555-1215",
+        "checkoutPolicy": "Self-checkout",
+        "other": "Allergies to peanuts"
+    },
+    {
+        "referenceNumber": "987654321",
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "nickName": "JS",
+        "gender": "Female",
+        "pronouns": "she/her/hers",
+        "gradeEntering": "11th",
+        "emailAddress": "janesmith@email.com",
+        "phoneNumber": "555-555-1216",
+        "parentName": "John Smith",
+        "parentPhoneNumber": "555-555-1217",
+        "emergencyContactName1": "Alice Smith",
+        "emergencyContactPhone1": "555-555-1218",
+        "emergencyContactName2": "Bob Smith",
+        "emergencyContactPhone2": "555-555-1219",
+        "checkoutPolicy": "Checkout required",
+        "other": "Vegetarian"
+    },
+    {
+        "referenceNumber": "147258369",
+        "firstName": "Bob",
+        "lastName": "Johnson",
+        "nickName": "BJ",
+        "gender": "Non-Conforming",
+        "pronouns": "they/them/theirs",
+        "gradeEntering": "12th",
+        "emailAddress": "bobjohnson@email.com",
+        "phoneNumber": "555-555-1220",
+        "parentName": "Jane Johnson",
+        "parentPhoneNumber": "555-555-1221",
+        "emergencyContactName1": "Alice Johnson",
+        "emergencyContactPhone1": "555-555-1222",
+        "emergencyContactName2": "Bob Johnson",
+        "emergencyContactPhone2": "555-555-1223",
+        "checkoutPolicy": "Self-checkout",
+        "other": "No known allergies"
+    }
+
+]
+
+[
+    {
+        "referenceNumber": "123456789",
         "name": "John Doe",
         "gender": "Male",
         "emailAddress": "johndoe@email.com",
